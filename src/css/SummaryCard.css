@@ -1,0 +1,64 @@
+/* Styling for the summary card list */
+.summary-card {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid var(--hrColor);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: var(--cardBgColor);
+  width: 150px;
+}
+
+.summary-card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.summary-card-info h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+  color: var(--primaryTextColor);
+}
+
+.summary-card-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--tempColor);
+  font-weight: 500;
+}
+
+.summary-card-info img {
+  width: 40%;
+  height: auto;
+}
+
+.summary-card-info .weather-condition {
+  font-size: 0.85rem;
+  color: var(--subHeadingColor);
+  text-transform: uppercase;
+}
+
+/* Ensure responsive design */
+@media only screen and (max-width: 1024px) {
+  .summary-card {
+    width: 120px;
+  }
+
+  .summary-card-info h4 {
+    font-size: 1rem;
+  }
+
+  .summary-card-info p {
+    font-size: 0.9rem;
+  }
+}
